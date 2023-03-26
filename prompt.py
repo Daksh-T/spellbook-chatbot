@@ -23,6 +23,9 @@ def chatbot_interface():
         if user_input.lower() == "quit":
             break
 
+        # Print empty line to break chatbot response from user input
+        print("                             ")
+    
         # Send user input to the Spellbook API
         response = send_request(user_input)
 

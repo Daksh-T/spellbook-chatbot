@@ -24,6 +24,9 @@ def chatbot_interface():
         if user_input.lower() == "quit":
             break
 
+        # Print empty line to break chatbot response from user input
+        print("                             ")
+
         # Add user input to the context
         context.append("You: " + user_input)
 
@@ -33,7 +36,8 @@ def chatbot_interface():
         # Extract the response and print it
         bot_response = response['output']
         print("Bot:", bot_response)
-
+        print("                             ")
+        
         # Add bot response to the context
         context.append("Bot: " + bot_response)
 
