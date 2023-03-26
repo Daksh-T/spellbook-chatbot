@@ -3,7 +3,7 @@
 A simple chatbot app that uses [Spellbook API](https://spellbook.scale.com/) for access to OpenAI models. You must have Spellbook API access for this to work.
 
 ## Versions
-``promptmachine.py`` generates outputs seperately for each prompt
+``prompt.py`` generates outputs seperately for each prompt
 
 ``chat.py`` uses the full context of the conversation
 
@@ -18,7 +18,7 @@ Complete the next response in this chat
 
 2. Deploy this prompt and copy the URL and API Key from the Deployment page
 
-3. Replace the ``<API Key>`` with your API Key you copied earlier and ``<Endpoint URL>`` with your Endpoint URL.
+3. In the code, replace the ``<API Key>`` with your API Key you copied earlier and ``<Endpoint URL>`` with your Endpoint URL.
 For example:
 ```python
     headers = {"Authorization": "Basic abcdefgh1234abc"}
